@@ -1,0 +1,26 @@
+name: Assign and Label PR
+
+on:
+  pull_request:
+    types:
+      - opened
+
+jobs:
+  assign_and_label_pr:
+    runs-on: ubuntu-latest
+    permissions:
+      pull-requests: write
+
+    steps:
+      - name: Assign PR to author
+        run: gh pr edit "$PR_NUMBER" --add-assignee "$AUTHOR"
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          PR_NUMBER: ${{ github.event.pull_request.number }}
+          AUTHOR: ${{ github.event.pull_request.user.login }}
+
+      - name: Add label to PR
+        run: gh pr edit "$PR_NUMBER" --add-label "Pendiente"
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          PR_NUMBER: ${{ github.event.pull_request.number }}

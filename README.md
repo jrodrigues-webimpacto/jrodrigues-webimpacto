@@ -25,9 +25,9 @@ Siempre estoy buscando mejorar mis habilidades y conocimientos. Participar en pr
 
 ## 📫 Cómo Contactarme
 
-- **LinkedIn**: [Tu LinkedIn]
-- **GitHub**: [Tu GitHub]
-- **Correo Electrónico**: [Tu correo electrónico]
+- **LinkedIn**: linkedin.com/in/zeluizr
+- **GitHub**: github.com/jrodrigues-webimpacto
+- **Correo Electrónico**: jrodrigues@webimpacto.es
 
 ## 🤝 Contribuciones y Retroalimentación
 

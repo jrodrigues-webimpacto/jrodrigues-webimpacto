@@ -1,4 +1,4 @@
-name: Assign and Label PR
+name: Assign, Label and Add Reviewer to PR
 
 on:
   pull_request:
@@ -6,7 +6,7 @@ on:
       - opened
 
 jobs:
-  assign_and_label_pr:
+  assign_label_reviewer_pr:
     runs-on: ubuntu-latest
     permissions:
       pull-requests: write
@@ -19,5 +19,11 @@ jobs:
       - name: Assign PR to author and add label
         run: |
           gh pr edit ${{ github.event.pull_request.number }} --add-assignee "${{ github.actor }}" --add-label "Pendiente"
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Add reviewer to PR
+        run: |
+          gh pr review ${{ github.event.pull_request.number }} --request "jrodrigues-webimpacto"
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}

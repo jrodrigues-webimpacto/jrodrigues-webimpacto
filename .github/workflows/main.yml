@@ -24,6 +24,6 @@ jobs:
 
       - name: Add reviewer to PR
         run: |
-          gh pr review ${{ github.event.pull_request.number }} --request "jrodrigues-webimpacto"
+          gh pr edit ${{ github.event.pull_request.number }} --add-reviewer "jrodrigues-webimpacto"
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}

@@ -1,11 +1,12 @@
-name: PR Workflow
+name: Assign, Label and Add Reviewer to PR
 
 on:
   pull_request:
-    types: [opened, review_requested, review_request_removed, review_submitted]
+    types:
+      - opened
 
 jobs:
-  manage_pr:
+  assign_label_reviewer_pr:
     runs-on: ubuntu-latest
     permissions:
       pull-requests: write
@@ -15,30 +16,14 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v2
 
-      - name: Assign PR to author and add initial label
-        if: github.event.action == 'opened'
+      - name: Assign PR to author and add label
         run: |
           gh pr edit ${{ github.event.pull_request.number }} --add-assignee "${{ github.actor }}" --add-label "Pendiente"
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
       - name: Add reviewer to PR
-        if: github.event.action == 'opened'
         run: |
           gh pr edit ${{ github.event.pull_request.number }} --add-reviewer "jrodrigues-webimpacto"
-        env:
-          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-
-      - name: Change label to Revisar
-        if: github.event.action == 'review_requested'
-        run: |
-          gh pr edit ${{ github.event.pull_request.number }} --remove-label "Pendiente" --add-label "Revisar"
-        env:
-          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-
-      - name: Change label to Listo
-        if: github.event.action == 'review_submitted' && github.event.review.state == 'approved'
-        run: |
-          gh pr edit ${{ github.event.pull_request.number }} --remove-label "Revisar" --add-label "Listo"
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}

@@ -1,4 +1,4 @@
-# 🖖 Hi, my name is Jose Luiz Rodrigues
+# 🖖 Hola, mi nombre es Jose Luiz Rodrigues
 
 soy un entusiasta del comercio electrónico con una amplia trayectoria en la plataforma @VTEX y habilidades Full Stack en JavaScript.
 

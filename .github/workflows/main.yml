@@ -10,17 +10,14 @@ jobs:
     runs-on: ubuntu-latest
     permissions:
       pull-requests: write
+      contents: read
 
     steps:
-      - name: Assign PR to author
-        run: gh pr edit "$PR_NUMBER" --add-assignee "$AUTHOR"
-        env:
-          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          PR_NUMBER: ${{ github.event.pull_request.number }}
-          AUTHOR: ${{ github.event.pull_request.user.login }}
+      - name: Checkout repository
+        uses: actions/checkout@v2
 
-      - name: Add label to PR
-        run: gh pr edit "$PR_NUMBER" --add-label "Pendiente"
+      - name: Assign PR to author and add label
+        run: |
+          gh pr edit ${{ github.event.pull_request.number }} --add-assignee "${{ github.actor }}" --add-label "Pendiente"
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          PR_NUMBER: ${{ github.event.pull_request.number }}

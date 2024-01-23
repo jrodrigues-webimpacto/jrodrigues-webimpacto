@@ -1,34 +1,34 @@
-# 🖖 Olá, meu nome é José Luiz Rodrigues
+# 🖖 Hola, mi nombre es José Luiz Rodrigues
 
-Sou um entusiasta do comércio eletrônico com vasta experiência na plataforma VTEX e habilidades Full Stack em JavaScript.
+Soy un entusiasta del comercio electrónico con amplia experiencia en la plataforma VTEX y habilidades en Full Stack JavaScript.
 
-## 💼 Experiência Profissional
+## 💼 Experiencia Profesional
 
-Minha jornada na VTEX é marcada por um envolvimento profundo com tecnologias modernas e uma abordagem inovadora para resolver desafios complexos de comércio eletrônico. Com mais de 5 anos de experiência, tenho conhecimento profundo em React, Next.js, Node e GraphQL, essenciais para o desenvolvimento de soluções robustas e escaláveis.
+Mi trayectoria en VTEX se caracteriza por un profundo compromiso con tecnologías modernas y un enfoque innovador para resolver complejos desafíos de comercio electrónico. Con más de 5 años de experiencia, poseo un conocimiento profundo en React, Next.js, Node y GraphQL, esenciales para el desarrollo de soluciones robustas y escalables.
 
-## 🚀 Projetos e Contribuições
+## 🚀 Proyectos y Contribuciones
 
-- **Contribuições no GitHub**: Mantenho uma atividade constante no GitHub, onde colaboro em vários projetos, demonstrando meu compromisso com a inovação e a comunidade open source.
-- **Projetos na VTEX**: Trabalhei em projetos significativos como [nome do projeto], onde apliquei minhas habilidades para desenvolver [descrição breve do projeto].
+- **Contribuciones en GitHub**: Mantengo una actividad constante en GitHub, colaborando en varios proyectos, lo que demuestra mi compromiso con la innovación y la comunidad de código abierto.
+- **Proyectos en VTEX**: He trabajado en proyectos significativos como [nombre del proyecto], donde apliqué mis habilidades para desarrollar [breve descripción del proyecto].
 
-## 🌟 Habilidades e Tecnologias
+## 🌟 Habilidades y Tecnologías
 
 - **Front-End**: ReactJS, React Native
 - **Back-End**: NodeJS
-- **Linguagens de Programação**: JavaScript, Python
-- **Outras Tecnologias**: GraphQL, REST API, DevOps
-- **Soft Skills**: Solução de problemas, comunicação eficaz, trabalho em equipe
+- **Lenguajes de Programación**: JavaScript, Python
+- **Otras Tecnologías**: GraphQL, REST API, DevOps
+- **Habilidades Blandas**: Solución de problemas, comunicación efectiva, trabajo en equipo
 
-## 📚 Aprendizado e Desenvolvimento Continuado
+## 📚 Aprendizaje y Desarrollo Continuo
 
-Estou sempre buscando aprimorar minhas habilidades e conhecimentos. Participar de projetos desafiadores e colaborar com equipes multidisciplinares na VTEX tem sido uma experiência enriquecedora que contribui para meu crescimento profissional.
+Siempre estoy buscando mejorar mis habilidades y conocimientos. Participar en proyectos desafiantes y colaborar con equipos multidisciplinarios en VTEX ha sido una experiencia enriquecedora que contribuye a mi crecimiento profesional.
 
-## 📫 Como me Contatar
+## 📫 Cómo Contactarme
 
-- **LinkedIn**: [Seu LinkedIn]
-- **GitHub**: [Seu GitHub]
-- **E-mail**: [Seu e-mail]
+- **LinkedIn**: [Tu LinkedIn]
+- **GitHub**: [Tu GitHub]
+- **Correo Electrónico**: [Tu correo electrónico]
 
-## 🤝 Contribuições e Feedback
+## 🤝 Contribuciones y Retroalimentación
 
-Feedback e contribuições para meus projetos são sempre bem-vindos! Sinta-se à vontade para fazer fork, abrir issues ou enviar pull requests.
+¡Los comentarios y contribuciones a mis proyectos son siempre bienvenidos! Siéntase libre de hacer fork, abrir issues o enviar pull requests.
